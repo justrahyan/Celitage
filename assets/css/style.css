@@ -17,28 +17,33 @@ html {
 }
 /* Slider Highlight for Mobile End */
 
-/* Hamburger Menu Start */
-/* Animasi Hamburger Menu */
-#hamburgerButton.active .hamburger-icon {
-  opacity: 0;
-}
-
-#hamburgerButton.active .close-icon {
-  opacity: 1;
-}
-
-/* Transisi Mobile Menu */
+/* Sidebar Menu */
 #mobileMenu {
-  transform: translateY(-10px);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: -70%; /* Awalnya tersembunyi */
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  padding: 1.5rem;
+  z-index: 50;
 }
 
+/* Saat menu aktif */
 #mobileMenu.active {
-  transform: translateY(0);
-  opacity: 1;
+  left: 0;
 }
-/* Hamburger Menu End */
+
+/* Tombol Close di Sidebar */
+#closeSidebar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 /* Popular Card Start */
 .card-popular:hover .card-data {
@@ -86,17 +91,6 @@ html {
   }
 }
 /* Popular Card End */
-
-/* Jarak Data Search Start */
-#search-results {
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-.search-result {
-  margin-bottom: 10px;
-}
-/* Jarak Data Search End */
 
 /* Testimoni Card Mobile Start */
 @media (max-width: 767px) {

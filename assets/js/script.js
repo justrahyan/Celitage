@@ -13,10 +13,14 @@ window.addEventListener("scroll", () => {
 // Hamburger Menu
 const hamburgerButton = document.getElementById("hamburgerButton");
 const mobileMenu = document.getElementById("mobileMenu");
+const closeSidebar = document.getElementById("closeSidebar");
 
 hamburgerButton.addEventListener("click", () => {
-  hamburgerButton.classList.toggle("active");
   mobileMenu.classList.toggle("active");
+});
+
+closeSidebar.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
 });
 
 // <=========================>
