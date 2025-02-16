@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gabriela: "Gabriela",
+        gabriela: "Monomakh",
         poppins: "Poppins",
       },
       colors: {
-        primary: "#1E444D",
+        primary: "#105D5E",
         secondary: "#F3A940",
         paragraph: "#292929",
         background: "#FCF5EB",

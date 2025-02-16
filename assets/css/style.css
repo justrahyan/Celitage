@@ -112,7 +112,7 @@ html {
 }
 
 /* Mobile Location Start */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .location-container .location-info {
     margin-right: 0;
   }
@@ -131,7 +131,23 @@ html {
     margin-left: 0;
   }
 }
-/* Mobile Location End */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+.dot.active {
+  background-color: white;
+}
 
 /* Masking Partner & Testimonials */
 .custom-mask {
